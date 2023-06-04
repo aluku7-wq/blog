@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: Dockerfile.nginx
+          file: nginx.dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/image:blognginx
   run_bash_script_in_the_server:

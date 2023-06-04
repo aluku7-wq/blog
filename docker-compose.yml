@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nextjs:
+    image: aluku/production-one:production-one
+    deploy:
+      replicas: 8
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 2
+        delay: 15s
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./:/app"

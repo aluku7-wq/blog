@@ -1,8 +1,8 @@
 export const data = [
-  {
-    name: "Best laptops for programming in 2023",
-    link: "/blogs/best-laptops-for-programming",
-  },
+  // {
+  //   name: "Best laptops for programming in 2023",
+  //   link: "/blogs/best-laptops-for-programming",
+  // },
   {
     name: "Best modern baby car seats in 2023",
     link: "/blogs/best-modern-baby-car-seats",

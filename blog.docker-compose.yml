@@ -2,7 +2,7 @@ version: "3"
 
 services:
   node-app:
-    image: aluku/image:blog # Replace with your Docker Hub image details
+    image: aluku/image:blog #  Replace with your Docker Hub image details
     deploy:
       replicas: 8
       restart_policy:

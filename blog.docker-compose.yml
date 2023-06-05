@@ -14,7 +14,7 @@ services:
       - 3000:3000
 
   nginx-app:
-    image: aluku/image:blog # Replace with your Docker Hub image details
+    image: aluku/image:blogReplace with your Docker Hub image details
     ports:
       - 80:80
       - 443:443

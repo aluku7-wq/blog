@@ -30,7 +30,6 @@ jobs:
           file: Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/image:blog
-
   run_bash_script_in_the_server:
     name: Telling truhost server to run bash script to ci/cd
     needs: "build-and-push"

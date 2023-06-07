@@ -27,17 +27,10 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: Dockerfile.nodejs
+          file: Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/image:blog
 
-      - name: Build and push Nginx image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: Dockerfile.nginx
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/image:blognginx
   run_bash_script_in_the_server:
     name: Telling truhost server to run bash script to ci/cd
     needs: "build-and-push"
